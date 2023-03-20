@@ -59,7 +59,7 @@ function App() {
 
       // SAVE USER TO MONGODB...
       if (profileObj) {
-        const response = await fetch ('https://apex-estate-e2kh.onrender.com', {
+        const response = await fetch ('https://apex-estate-e2kh.onrender.com/users', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json'},
           body: JSON.stringify ({
